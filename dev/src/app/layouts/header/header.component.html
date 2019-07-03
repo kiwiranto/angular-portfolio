@@ -1,3 +1,5 @@
-<footer class="container text-center">
-  <p>header works!</p>
-</footer>
+<header class="container text-center">
+  <nav class="nav nav-pills nav-justified">
+    <a class="nav-item nav-link" *ngFor="let nav of navigation" routerLink="{{ nav.url }}" routerLinkActive="active">{{ nav.text }}</a>
+  </nav>
+</header>

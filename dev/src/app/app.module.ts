@@ -7,9 +7,7 @@ import { BrowserAnimationsModule, NoopAnimationsModule   } from '@angular/platfo
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ProfileComponent } from './pages/profile/profile.component';
+import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { MasterComponent } from './layouts/master/master.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
@@ -18,8 +16,6 @@ import { FooterComponent } from './layouts/footer/footer.component';
   declarations: [
     AppComponent,
     NotFoundComponent,
-    HomeComponent,
-    ProfileComponent,
     MasterComponent,
     HeaderComponent,
     FooterComponent
