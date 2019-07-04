@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './pages/home.component';
+import { AngularMaterialModule } from 'src/app/angular-material.module';
 
 @NgModule({
   declarations: [HomeComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    AngularMaterialModule
   ]
 })
 export class HomeModule { }
