@@ -1,5 +1,19 @@
-<header class="container text-center">
-  <nav class="nav nav-pills nav-justified">
-    <a class="nav-item nav-link" *ngFor="let nav of navigation" routerLink="{{ nav.url }}" routerLinkActive="active">{{ nav.text }}</a>
+<header class="text-center">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/home">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" *ngFor="let nav of navigation" routerLinkActive="active">
+            <a class="nav-link" routerLink="{{ nav.url }}">{{ nav.text }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </header>
+
