@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule, NoopAnimationsModule   } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
@@ -24,7 +24,6 @@ import { FooterComponent } from './layouts/footer/footer.component';
     BrowserModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
-    NoopAnimationsModule,
     AppRoutingModule,
     FormsModule
   ],
